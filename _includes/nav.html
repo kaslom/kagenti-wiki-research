@@ -1,0 +1,10 @@
+<ul class="nav-list">
+  {% assign pages = site.pages | where_exp: "p", "p.path contains 'ai/'" | sort: "title" %}
+  {% for p in pages %}
+  {% unless p.path contains '_drafts' or p.name == 'index.md' or p.title == nil %}
+  <li{% if page.url == p.url %} class="active"{% endif %}>
+    <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+  </li>
+  {% endunless %}
+  {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+title: Kagenti Wiki Research
+description: Multi-agent research knowledge base
+baseurl: /kagenti-wiki-research
+url: https://kaslom.github.io
+markdown: kramdown
+exclude:
+  - .gitignore
+  - "*.py"
+  - "*.yaml"
+  - "*.yml"
+  - "!_config.yml"
+include:
+  - ai
+defaults:
+  - scope:
+      path: "ai"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
