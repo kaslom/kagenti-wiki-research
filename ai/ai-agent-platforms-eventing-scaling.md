@@ -1,3 +1,6 @@
+---
+tags: [eventing, scaling, architecture, kubernetes, agents]
+---
 # AI Agent Platforms That Use Eventing for Scaling
 
 ## Overview
